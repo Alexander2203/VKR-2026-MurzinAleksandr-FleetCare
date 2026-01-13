@@ -6,6 +6,7 @@ env/
 # Файл с секретами
 .env
 .env.local
+secrets.txt
 
 # База данных (если будет SQLite для разработки)
 *.sqlite3
@@ -23,11 +24,15 @@ staticfiles/
 .vscode/
 .idea/
 
-# Миграции Django (НО только кэшированные, не сами файлы миграций)
-*.pyc
-
 # Логи
 *.log
+
+# Файлы, специфичные для IDE (VS Code, PyCharm и т.д.)
+*.swp
+
+# Файлы временных данных
+*.bak
+*.tmp
 
 # OS файлы
 .DS_Store
